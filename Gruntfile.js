@@ -181,7 +181,7 @@ module.exports = function(grunt) {
 			dev: {
 				options: {
 					port: 9001,
-					hostname: 'localhost',
+					hostname: 'ansonkao.local',
 					open: {
 						 target: 'http://<%= connect.dev.options.hostname %>:' +
 						 '<%= connect.dev.options.port %>',
@@ -191,13 +191,13 @@ module.exports = function(grunt) {
 			sync: {
 				options: {
 					port: 9001,
-					hostname: 'localhost',
+					hostname: 'ansonkao.local',
 				}
 			},
 			dist: {
 				options: {
 					port: 9002,
-					hostname: 'localhost',
+					hostname: 'ansonkao.local',
 					base: '<%= config.dist %>',
 					keepalive: true,
 					open: {
@@ -494,7 +494,7 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files: ['*.html'],
-				tasks: ['newer:htmllint', 'newer:bootlint'],
+				tasks: ['newer:htmllint'],
 				options: {
 					spawn: false,
 				}
@@ -514,7 +514,6 @@ module.exports = function(grunt) {
 		'`grunt lint` lints JavasScript (JSHint) and HTML files (validate and Bootlint)',
 		[
 			'htmllint',
-			'bootlint',
 			'jshint'
 		]
 	);

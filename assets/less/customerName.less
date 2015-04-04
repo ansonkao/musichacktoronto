@@ -19,3 +19,86 @@
 // seperate files like the examples above when you exceed a few hundred lines
 // of code. Otherwise it will definitely have a negative impact on
 // maintainabilty.
+
+
+.layout-header {
+  margin-top: -71px;
+  padding: 8% 0 5%;
+  background-color: #000;
+  color: #BBB;
+  //border-bottom: 6px solid @brand-primary;
+}
+.layout-header-logo {
+  color: #FFF;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.layout-header-logo-monthly {
+  padding-left: 1px;
+  display: block;
+  font-size: 24px;
+}
+.layout-header-logo-music {
+  font-weight: bold;
+  font-size: 48px;
+}
+.layout-header-logo-hackathon {
+  font-weight: lighter;
+  font-size: 50px;
+}
+.layout-header-logo-toronto {
+  margin-top: 4px;
+  display: block;
+  font-family: "Roboto";
+  font-weight: lighter;
+  font-size: 20px;
+  color: @brand-primary;
+  letter-spacing: 13.4px;
+}
+
+.layout-body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.announcements {
+  padding: 20px;
+  background-color: @brand-primary;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+  form,
+  iframe {
+    vertical-align: middle;
+    margin: 5px 5px 5px 15px;
+  }
+
+  .form-control {
+    font-weight: normal;
+    border-color: #000;
+  }
+}
+
+.thumbnail {
+  position: relative;
+  padding: 0;
+  border: none;
+
+  .caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+  }
+}
+
+.lead + h2 {
+  margin-top: 40px;
+}
+
+form {
+  display: inline-block;
+}

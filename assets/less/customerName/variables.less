@@ -31,6 +31,9 @@
 @lg-and-above:     ~"only screen and (min-width: @{screen-md-min})";
 @xl-and-above:     ~"only screen and (min-width: @{screen-lg-min})";
 
+@font-family-base:      "Roboto", @font-family-sans-serif;
+@headings-font-family:  "Oswald", @font-family-sans-serif;
+
 
 // Bootstrap variables
 // --------------------------------------------------
@@ -56,9 +59,9 @@
 // @gray-light:             lighten(@gray-base, 46.7%); // #777
 // @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-// @brand-primary:         #428bca;
+@brand-primary:         #4C6;
 // @brand-success:         #5cb85c;
-// @brand-info:            #5bc0de;
+@brand-info:            #000;
 // @brand-warning:         #f0ad4e;
 // @brand-danger:          #d9534f;
 
@@ -356,7 +359,7 @@
 //** Number of columns in the grid.
 // @grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
-// @grid-gutter-width:         30px;
+@grid-gutter-width:         50px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 // @grid-float-breakpoint:     @screen-sm-min;
@@ -423,7 +426,7 @@
 // Inverted navbar
 // Reset inverted navbar basics
 // @navbar-inverse-color:                      lighten(@gray-light, 15%);
-// @navbar-inverse-bg:                         #222;
+@navbar-inverse-bg:                         transparent;
 // @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
